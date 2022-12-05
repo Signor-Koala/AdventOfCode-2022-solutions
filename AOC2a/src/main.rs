@@ -10,6 +10,6 @@ fn main() {
         } else {
             soln += (b - a + 1)*3;
         }
-        println!("{}", soln);
     }
+    println!("{}", soln);
 }

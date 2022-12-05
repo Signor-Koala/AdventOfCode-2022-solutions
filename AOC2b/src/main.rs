@@ -11,7 +11,6 @@ fn main() {
             4 => 1,
             _ => y,
         };
-
-        println!("{}", soln);
     }
+    println!("{}", soln);
 }

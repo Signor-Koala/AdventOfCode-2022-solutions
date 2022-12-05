@@ -25,7 +25,6 @@ func main() {
 			continue
 		}
 		num, _ := strconv.Atoi(line)
-		println(num, "...", count)
 		count += num
 	}
 	fmt.Println(max[0] + max[1] + max[2])
