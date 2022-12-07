@@ -63,10 +63,11 @@ fn main() {
         };
     }
 
-    let mut output = 0;
+    let mut output = *sizes.get("/").unwrap();
+    let needed =  output - 70000000 + 30000000;
     for (name, size) in sizes {
-        if size < 100000 {
-            output += size
+        if size > needed && size < output {
+            output = size;
         }
     }
     println!("{}", output);
